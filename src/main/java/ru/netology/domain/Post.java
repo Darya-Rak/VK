@@ -12,7 +12,8 @@ public class Post {
     private Views vies;
     private GeoLocation geo;
     private MediaContent mediaContent;
-
+    private PostSource postSource;
+    private String postType;
 
     int signedID; //если от имени сообщества, но подписано автором
     private boolean canPin;
@@ -22,7 +23,7 @@ public class Post {
     private boolean markedAsAds;
     private boolean isFavourite;
 
-    private String postType;
+
 
     public int getPostID() {
         return postID;
@@ -166,5 +167,13 @@ public class Post {
 
     public void setPostType(String postType) {
         this.postType = postType;
+    }
+
+    public PostSource getPostSource() {
+        return postSource;
+    }
+
+    public void setPostSource(PostSource postSource) {
+        this.postSource = postSource;
     }
 }
